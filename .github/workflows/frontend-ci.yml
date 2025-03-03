@@ -33,8 +33,16 @@ jobs:
           echo "Instalando dependencias..."
           npm install
           echo "Dependencias instaladas correctamente ✅"
+          
 
-      - name: Run tests
+      - name: Install Playwright browsers
+        working-directory: frontend-fitness  # Ruta de tu frontend
+        run: |
+          echo "Instalando navegadores de Playwright..."
+          npx playwright install
+          echo "Navegadores de Playwright instalados correctamente ✅"
+
+      - name: Run playwright tests
         working-directory: frontend-fitness   # Se ejecuta en la carpeta correcta
         run: |
           echo "Ejecutando pruebas..."
