@@ -22,23 +22,23 @@
  
  
    return (
-     <html lang="en">
+      <html lang="en">
  
        
        
        <body className={`${oswald.className} ${montserrat.className} relative`}>
  
        {isHome && (
-         <video
-         autoPlay
-         loop
-         muted
-         playsInline
-         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-       >
-         <source src="/video/Home_Video.mp4" type="video/mp4" />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        >
+          <source src="/video/Home_Video.mp4" type="video/mp4" />
          Tu navegador no soporta videos.
-       </video> 
+        </video> 
        )}
          
          <Header />  {/* Componente Header */}
