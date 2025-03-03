@@ -28,14 +28,14 @@ jobs:
         run: echo "Node.js configurado correctamente ✅"
 
       - name: Install dependencies
-        working-directory: proyecto-GYM/frontend-fitness  # Cambia el directorio de trabajo
+        working-directory: frontend-fitness  # Cambia el directorio de trabajo
         run: |
           echo "Instalando dependencias..."
           npm install
           echo "Dependencias instaladas correctamente ✅"
 
       - name: Run tests
-        working-directory: proyecto-GYM/frontend-fitness   # Se ejecuta en la carpeta correcta
+        working-directory: frontend-fitness   # Se ejecuta en la carpeta correcta
         run: |
           echo "Ejecutando pruebas..."
           npm run test:playwright
